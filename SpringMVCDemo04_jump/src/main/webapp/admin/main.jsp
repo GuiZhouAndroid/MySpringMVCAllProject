@@ -11,6 +11,20 @@
     <title>Title</title>
 </head>
 <body>
-main.......................................
+<h2>main...显示数据</h2>
+<%--
+        request.setAttribute("requestUser",u);
+        session.setAttribute("sessionUser",u);
+        model.addAttribute("modelUser",u);
+        map.put("mapUser",u);
+        modelMap.addAttribute("modelMapUser",u);
+--%>
+requestUsers:${requestUser}<br>
+sessionUsers:${sessionUser}<br>
+modelUsers:${modelUser}<br>
+mapUsers:${mapUser}<br>
+modelMapUsers:${modelMapUser}<br>
+从index.jsp页超链接获取的姓名${param.name}
+从index.jsp页超链接获取的年龄${param.age}
 </body>
 </html>

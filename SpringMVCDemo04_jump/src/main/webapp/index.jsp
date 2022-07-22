@@ -16,5 +16,7 @@
 <a href="${pageContext.request.contextPath}/three.do">3.重定向页面</a><br><br>
 <a href="${pageContext.request.contextPath}/four.do">4.重定向do</a><br><br>
 <a href="${pageContext.request.contextPath}/five.do">5.随便跳页面</a><br><br>
+
+<a href="${pageContext.request.contextPath}/myInfo.do?name=张松&age=24">访问服务器,进行数据携带跳转</a>
 </body>
 </html>
