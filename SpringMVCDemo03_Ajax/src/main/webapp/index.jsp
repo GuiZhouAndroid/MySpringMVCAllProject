@@ -15,17 +15,19 @@
 <button onclick="getlist()">点击获取学生集合</button>
 <div id="list">正在请求数据...</div>
 <script type="text/javascript">
-    $.ajax({
-        url: '${pageContext.request.contextPath}/list.do',
-        dataType: 'json',
-        success: function (result) {
-            let s = "";
-            $.each(result, function (item, stu) {
-                s += stu.name + "----" + stu.age + "</br>"
-            })
-            $("#list").html(s);
-        }
-    })
+    function getlist() {
+        $.ajax({
+            url: '${pageContext.request.contextPath}/list.do',
+            dataType: 'json',
+            success: function (result) {
+                let s = "";
+                $.each(result, function (item, stu) {
+                    s += stu.name + "----" + stu.age + "</br>"
+                })
+                $("#list").html(s);
+            }
+        })
+    }
 </script>
 </body>
 </html>
